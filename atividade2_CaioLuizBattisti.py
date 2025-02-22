@@ -11,12 +11,16 @@ nome_produto = input("\nDigite o nome do produto: ")
 if nome_produto in produtos:
     posicao = produtos.index(nome_produto)
     print(f"O produto {nome_produto} esta na posicao {posicao}")
+    print("caioLuizbattsiti")
 else:
     print("produto nao encontrado!")
+    print("caioLuizbattsiti")
 while True:
     indice =int(input("\nDigite um numero entre 0 e 9: "))
     if 0 <= indice <=9:
         print(f"O produto na posição {indice} é '{produtos[indice]}'")
+        print("caioLuizbattsiti")
         break
     else:
         print("produto nao encontrado")
+        print("caioLuizbattsiti")
