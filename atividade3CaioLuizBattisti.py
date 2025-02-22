@@ -6,7 +6,6 @@
 #Pergunte ao usuário se ele ainda deseja que essa pessoa venha à festa. Se ele responder "não",
 #exclua essa entrada da lista e exiba a lista novamente
 nomes =tuple(input("Digite um nome: ")for nomes in range(3))
-
 novos_nomes = []
 while True:
     adicionar = input("Deseja adicionar outro nome? (s/n): ").strip().lower()
@@ -14,18 +13,14 @@ while True:
         break
     novo_nome = input("Digite o nome adicional: ")
     novos_nomes.append(novo_nome)
-
 nomes += tuple(novos_nomes)
-
 print(f"voce convidou {len(nomes)} pessoas para a festa.")
 print("Lista de convidados:",nomes)
-
 nome_procurado = input("Digite um nome da lista para procura-lo: ")
 if nome_procurado in nomes:
     print(f"O nome {nome_procurado} esta na posição {nomes.index(nome_procurado)} da lista.")
 else:
     print("O nome digitado não esta na lista!")
-
 remover = input(f"Deseja remover {nome_procurado} da lista? (s/n): ").strip().lower()
 if remover == "s" and nome_procurado in nomes:
     nomes = tuple(nome for nome in nomes if nome != nome_procurado)
