@@ -6,5 +6,7 @@ print("paises:",paises)
 pais_usuario=input("Digite um dos paises exibidos: ")
 if pais_usuario in paises:
     print(f"O pais {pais_usuario} esta na posição: {paises.index(pais_usuario)}")
+    print("caioLuizbattsiti")
 else: 
-    print("este pais nao esta na lista!") 
+    print("este pais nao esta na lista!")
+    print("caioLuizbattsiti") 
