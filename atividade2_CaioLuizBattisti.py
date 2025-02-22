@@ -8,11 +8,14 @@ for produto in produtos:
     nome_produto = input("\nDigite o nome de um produto: ")
     if nome_produto in produto:
         print(f"O produto '{nome_produto}' esta na posição: {produtos.index(nome_produto)}")
+        print("caioLuizbattsiti")
     else:
         print(f"O produto '{nome_produto}' nao foi encontrado!")
+        print("caioLuizbattsiti")
     try:
         indice = int(input("\nDigite o produto entre 0 e 9: "))
         if indice <= 0 and indice < 10:
             print(f"O produto na posição {indice} é '{produto[indice]}'")
     except ValueError:
             print("Entrada invalida,tente de novo!")
+            print("caioLuizbattsiti")
